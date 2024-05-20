@@ -23,8 +23,13 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             // SiswaSeeder::class
-            WargaSeeder::class,
-            KtpSeeder::class,
+            // WargaSeeder::class,
+            // KtpSeeder::class,
+            RelasiSeeder::class,
         ]);
+
+        // Tampilkan informasi berikut bila Seeder telah dilakukan
+        $this->command->info('SeederRelasi berhasil.');
+
     }
 }
